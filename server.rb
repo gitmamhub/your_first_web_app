@@ -22,3 +22,13 @@ get '/favourites' do
    @fav_links =["www.amazon.ca","www.ebay.ca","www.kijiji.ca","www.facebook.com","www.mail.yahoo.com"]
   erb :favourites
 end
+
+get '/' do
+  redirect to ('/home')
+
+end
+
+
+get '/gallery' do
+  redirect to ('/portfolio')
+end
